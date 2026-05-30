@@ -1,48 +1,53 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  to: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: '课程地图',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    to: '/docs/category/课程笔记',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        微专业每门课的通关攻略：教材、考核、实验避坑、推荐资源，
+        老带新少绕弯。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '比赛沙盒',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    to: '/docs/category/比赛经验',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        RoboMaster、电赛、数模等赛事的标准三件套：入坑指引、技术栈、
+        历届踩坑合集。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '升学攻略',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    to: '/docs/category/升学就业',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        保研、考研、留学、就业的方向地图与时间线，配 AI 工具链
+        让学习与求职更省力。
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Svg, description, to}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -51,6 +56,9 @@ function Feature({title, Svg, description}: FeatureItem) {
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
+        <Link className="button button--primary button--sm" to={to}>
+          进入板块
+        </Link>
       </div>
     </div>
   );

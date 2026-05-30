@@ -1,0 +1,8 @@
+{
+  "label": "AI 工具链",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "AI Agent 使用心得、Prompt 库、本地大模型部署 SOP，专业学习中的 AI 实践。"
+  }
+}

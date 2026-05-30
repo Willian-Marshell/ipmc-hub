@@ -1,25 +1,19 @@
-yangshun:
-  name: Yangshun Tay
-  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
-  url: https://linkedin.com/in/yangshun
-  image_url: https://github.com/yangshun.png
-  page: true
+ipmc-hub:
+  name: IPMC Hub 维护组
+  title: 项目通用署名
+  url: https://github.com/Willian-Marshell/ipmc-hub
+  image_url: https://github.com/Willian-Marshell.png
+  page: false
   socials:
-    x: yangshunz
-    linkedin: yangshun
-    github: yangshun
-    newsletter: https://www.greatfrontend.com
+    github: Willian-Marshell
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
-  socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+# 新贡献者请追加在下方，key 用你的 GitHub ID。模板：
+#
+# zhangsan:
+#   name: 张三
+#   title: 2024 级 IPMC 微专业
+#   url: https://github.com/zhangsan
+#   image_url: https://github.com/zhangsan.png
+#   page: true
+#   socials:
+#     github: zhangsan

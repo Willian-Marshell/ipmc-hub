@@ -1,0 +1,9 @@
+{
+  "label": "归档",
+  "position": 99,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "已退役的内容，保留供历史追溯。"
+  }
+}

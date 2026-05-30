@@ -1,19 +1,67 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+# 类型轴 ----------------------------------------------------
+课程心得:
+  label: 课程心得
+  permalink: /course-notes
+  description: 微专业课程的学习经验、复习思路、避坑指南。
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+比赛复盘:
+  label: 比赛复盘
+  permalink: /competition-recap
+  description: 各类学科与工程竞赛的赛后总结、技术复盘。
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+升学经验:
+  label: 升学经验
+  permalink: /postgrad
+  description: 保研、考研、留学、就业相关的经验分享。
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+AI实践:
+  label: AI 实践
+  permalink: /ai-practice
+  description: AI Agent、Prompt 工程、本地部署等实战心得。
+
+生活感悟:
+  label: 生活感悟
+  permalink: /life
+  description: 学习生活、自我管理、心态调整。
+
+贡献指南:
+  label: 贡献指南
+  permalink: /contributing
+  description: 关于如何参与 IPMC Hub 建设的元信息。
+
+# 届数轴 ----------------------------------------------------
+grade-2024:
+  label: 2024 级
+  permalink: /grade-2024
+  description: 2024 级学生贡献的内容。
+
+grade-2025:
+  label: 2025 级
+  permalink: /grade-2025
+  description: 2025 级学生贡献的内容。
+
+# 主题轴 ----------------------------------------------------
+嵌入式:
+  label: 嵌入式
+  permalink: /embedded
+  description: 嵌入式系统、单片机、RTOS 相关。
+
+RoboMaster:
+  label: RoboMaster
+  permalink: /robomaster
+  description: 机甲大师赛事相关。
+
+保研:
+  label: 保研
+  permalink: /tuimian
+  description: 国内推免相关。
+
+考研:
+  label: 考研
+  permalink: /kaoyan
+  description: 国内研究生入学考试相关。
+
+留学:
+  label: 留学
+  permalink: /overseas
+  description: 海外升学相关。
