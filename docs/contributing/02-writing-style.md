@@ -46,10 +46,57 @@ print("hello")
 
 ## 图片
 
-- 放在 `static/img/<doc-slug>/`，不要内嵌 base64 也不要外链图床（图床会失效）
-- 文件名用英文小写连字符：`uart-wiring.png`
-- 引用用相对路径：`![串口接线](/img/embedded-uart/uart-wiring.png)`
-- 截图前隐去无关信息（学号、QQ、邮箱）
+### 为什么不用图床
+
+代代接力的项目寿命以年计。任何外部图床（QQ、SM.MS、知乎、个人云盘）一两年内都可能限速、防盗链、跑路或停服，链接断了等于变相删除文章。所有图片**随仓库走**，配合 GitHub Pages 的 CDN 已足够快。
+
+唯一例外：通过 GitHub 网页编辑器拖图上传的 `user-images.githubusercontent.com` 链接——它属于 GitHub 自家服务、不会跑路，所以网页路径贡献者可以临时使用。但这类链接最终仍要由栏目主编迁移到仓库内 `static/img/`，避免文档归档时图丢失。详见 [10 分钟提出第一个 PR · 网页路径下要加图怎么办](./quickstart#网页路径下要加图怎么办)。
+
+### 目录与命名
+
+图片放在 `static/img/<doc-slug>/`，`<doc-slug>` 与文档源文件路径对应（去掉 `docs/`/`blog/` 前缀，路径分隔符换成 `-`）：
+
+- `docs/courses/embedded-systems/labs.md` → `static/img/courses-embedded-systems-labs/`
+- `blog/2026-09-15-rm-vision-recap.md` → `static/img/2026-09-15-rm-vision-recap/`
+
+文件名规范：
+
+- 用英文小写 + 连字符：`uart-wiring.png`、`02-pid-tuning-curve.png`
+- 推荐加两位数字前缀控制顺序：`01-overview.png`、`02-...`
+- 禁止：中文名、空格、`IMG_20260530_142357.jpg` 这种相机原始名
+
+### 引用写法
+
+统一用站点绝对路径（Docusaurus 会自动加 `baseUrl`）：
+
+```markdown
+![串口接线](/img/embedded-uart/uart-wiring.png)
+```
+
+### 多图导入用 `npm run add-images`
+
+写一篇有十几张图的文章时，手动 mkdir、改名、写引用很痛苦。仓库提供了批量导入脚本：
+
+```bash
+# 把 ~/Downloads 下的截图批量导入嵌入式实验文档
+npm run add-images -- --doc docs/courses/embedded-systems/labs.md ~/Downloads/IMG_*.png
+```
+
+脚本会自动建目录、按 `01- 02- 03-` 重命名、并把可粘贴的 Markdown 引用块输出到终端。详见 [脚本帮助](https://github.com/Willian-Marshell/ipmc-hub/blob/main/scripts/add-images.mjs)（运行时加 `--help` 也能看）。
+
+### 体积与格式
+
+不设硬性上限，但请**导出前自觉压缩**——单图最好控制在 1 MB 以内：
+
+- 屏幕截图：用 [Squoosh.app](https://squoosh.app) 在线压一下，或导出时选 WebP（体积常常 -50% 到 -70%）
+- 加 `--webp` 标志可让脚本自动转：`npm run add-images -- --doc <file> --webp <imgs>`（需 `npm i -D sharp`）
+- 拍照原图先在系统里"调整大小"到 1920px 宽以内再导入
+
+GIF 演示动图超过 5 MB 建议改传 B 站/YouTube 用 iframe 嵌入；硬件演示**视频不进 git**。
+
+### 截图前隐去无关信息
+
+学号、姓名、QQ 号、邮箱、私聊上下文都要打码或裁掉。涉及他人头像/名字的截图先获得对方同意。
 
 ## 引用与署名
 

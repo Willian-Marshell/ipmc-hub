@@ -53,7 +53,10 @@ docs/
 └── archive/<year>/               退役内容（只搬不删）
 ```
 
-- 图片放 `static/img/<doc-slug>/`，不内嵌 base64、不外链图床
+- 图片放 `static/img/<doc-slug>/`，引用用站点绝对路径 `/img/<doc-slug>/<file>`
+- 禁止外链图床（链接会失效，违背"代代接力"原则）；禁止 base64 内嵌（污染 markdown 源文件）
+- 多图导入用 `npm run add-images -- --doc <文档路径> <图片...>`，脚本会自动建目录、改名、输出可粘贴的 Markdown 引用（详见 [docs/contributing/02-writing-style.md](docs/contributing/02-writing-style.md) 图片小节）
+- 例外：贡献者通过 GitHub 网页编辑器拖图产生的 `user-images.githubusercontent.com` 链接是临时合法的，但合入后栏目主编需用 `add-images` 脚本迁移到仓库；遇到这类 PR 请提醒迁移
 - 修改任何贡献规则必须同步更新 `docs/contributing/`
 
 ## frontmatter 硬规则
