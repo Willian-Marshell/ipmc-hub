@@ -53,7 +53,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/ipc-social-card.png',
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -61,7 +61,7 @@ const config: Config = {
       title: 'IPMC Hub',
       logo: {
         alt: 'IPMC Hub Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.jpg',
       },
       items: [
         {
