@@ -66,15 +66,16 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'knowledgeSidebar',
           position: 'left',
           label: '知识库',
         },
         {to: '/blog', label: '心得博客', position: 'left'},
         {
-          to: '/docs/contributing/quickstart',
-          label: '贡献指南',
+          type: 'docSidebar',
+          sidebarId: 'contributingSidebar',
           position: 'left',
+          label: '贡献指南',
         },
         {
           href: 'https://github.com/Willian-Marshell/ipmc-hub',
