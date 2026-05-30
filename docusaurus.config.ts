@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'IPMC Hub',
   tagline: '深大智能感知与运动控制微专业 · 学生开源知识库',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/ipc_icon.ico',
 
   future: {
     v4: true,
