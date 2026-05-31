@@ -4,7 +4,7 @@
 
 每届学生把课程笔记、比赛复盘、AI 工具心得、升学攻略沉淀下来，代代接力。
 
-线上站点：<https://willian-marshell.github.io/ipmc-hub/>
+线上站点：<https://ipmc-hub.org.cn>
 
 ## 我想读资料
 

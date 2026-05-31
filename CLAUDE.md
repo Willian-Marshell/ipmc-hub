@@ -15,7 +15,7 @@
 - Node 要求：>= 20
 - 部署：GitHub Actions → `gh-pages` 分支，触发条件 push to `main`
 - 仓库：`Willian-Marshell/ipmc-hub`（注：仓库会从 `my-blog` 改名为 `ipmc-hub`）
-- 部署 URL：`https://willian-marshell.github.io/ipmc-hub/`
+- 部署 URL：`https://ipmc-hub.org.cn/`（自定义域名，CNAME 文件在 `static/CNAME`，会随每次构建写入 `build/`）
 - 站点语言：仅 `zh-Hans`，不启用 i18n
 
 ## 常用命令

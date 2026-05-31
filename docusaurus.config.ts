@@ -11,8 +11,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://Willian-Marshell.github.io',
-  baseUrl: '/ipmc-hub/',
+  url: 'https://ipmc-hub.org.cn',
+  baseUrl: '/',
 
   organizationName: 'Willian-Marshell',
   projectName: 'ipmc-hub',
