@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_blog=self.webpackChunkmy_blog||[]).push([["1833"],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"IPMC Hub \u4E0A\u7EBF \u2014\u2014 \u7B2C\u4E00\u7BC7\u5FC3\u5F97\u535A\u5BA2\u662F\u8FD9\u4E00\u7BC7","permalink":"/blog/welcome","unlisted":false,"date":"2026-05-30T00:00:00.000Z"}]}')}}]);
